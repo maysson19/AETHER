@@ -1,0 +1,431 @@
+<div
+  class="site-shell"
+  (pointermove)="onGlobalPointerMove($event)"
+  (pointerleave)="onGlobalPointerLeave()"
+>
+<!-- GLOBAL SPACE BACKGROUND -->
+<div class="space-background" aria-hidden="true">
+  <div class="space-stars"></div>
+  <div class="space-glow space-glow-one"></div>
+  <div class="space-glow space-glow-two"></div>
+  <!-- SHOOTING STARS -->
+<div class="shooting-stars">
+  <span class="shooting-star star-one"></span>
+  <span class="shooting-star star-two"></span>
+  <span class="shooting-star star-three"></span>
+  <span class="shooting-star star-four"></span>
+</div>
+</div>
+  <!-- Custom Cursor -->
+  <div
+    class="custom-cursor"
+    [class.is-link]="cursorOnLink"
+    aria-hidden="true"
+  >
+    <span>{{ cursorOnLink ? '↗' : '' }}</span>
+  </div>
+
+  <!-- HERO SECTION -->
+  <main
+    class="aether"
+    (pointermove)="onPointerMove($event)"
+    (pointerleave)="onPointerLeave()"
+  >
+
+
+
+<div class="orb-wrap" aria-hidden="true">
+
+  <div class="orb-core sun">
+    <span class="sun-label">SUN</span>
+  </div>
+
+  <div class="orbit orbit-one">
+    <div class="orbit-planet planet-one">
+      <span class="planet-tooltip">
+        <strong>Mercury | عطارد</strong>
+        <small>Smallest planet · 88-day orbit</small>
+      </span>
+    </div>
+  </div>
+
+  <div class="orbit orbit-two">
+    <div class="orbit-planet planet-two">
+      <span class="planet-tooltip">
+        <strong>Venus | الزهرة</strong>
+        <small>Hottest planet in our solar system</small>
+      </span>
+    </div>
+  </div>
+
+  <div class="orbit orbit-three">
+    <div class="orbit-planet planet-three">
+      <span class="planet-tooltip">
+        <strong>Earth | الأرض</strong>
+        <small>Our home · The only known world with life</small>
+      </span>
+    </div>
+  </div>
+
+  <div class="orbit orbit-four">
+    <div class="orbit-planet planet-four">
+      <span class="planet-tooltip">
+        <strong>Mars | المريخ</strong>
+        <small>The Red Planet · Two small moons</small>
+      </span>
+    </div>
+  </div>
+
+  <div class="orbit orbit-five">
+    <div class="orbit-planet planet-five">
+      <span class="planet-tooltip">
+        <strong>Jupiter | المشتري</strong>
+        <small>Largest planet · Great Red Spot</small>
+      </span>
+    </div>
+  </div>
+
+  <div class="orbit orbit-six">
+    <div class="orbit-planet planet-six">
+      <span class="planet-ring"></span>
+      <span class="planet-tooltip">
+        <strong>Saturn | زحل</strong>
+        <small>Famous for its spectacular rings</small>
+      </span>
+    </div>
+  </div>
+
+  <div class="orbit orbit-seven">
+    <div class="orbit-planet planet-seven">
+      <span class="planet-tooltip">
+        <strong>Uranus | أورانوس</strong>
+        <small>Ice giant · Rotates on its side</small>
+      </span>
+    </div>
+  </div>
+
+  <div class="orbit orbit-eight">
+    <div class="orbit-planet planet-eight">
+      <span class="planet-tooltip">
+        <strong>Neptune | نبتون</strong>
+        <small>Farthest planet · Powerful winds</small>
+      </span> 
+    </div>
+  </div>
+
+</div>
+
+<!-- Rocket Journey -->
+<div class="rocket-space" aria-hidden="true">
+  <div class="rocket">
+    <span class="rocket-nose"></span>
+    <span class="rocket-window"></span>
+    <span class="rocket-fin rocket-fin-left"></span>
+    <span class="rocket-fin rocket-fin-right"></span>
+    <span class="rocket-flame"></span>
+  </div>
+</div>
+
+
+
+
+    <!-- Hero Content -->
+  <div class="hero-content">
+    <h1 class="hero-title" aria-label="AETHER">
+      <span class="hero-letter" aria-hidden="true">A</span>
+      <span class="hero-letter" aria-hidden="true">E</span>
+      <span class="hero-letter" aria-hidden="true">T</span>
+      <span class="hero-letter" aria-hidden="true">H</span>
+      <span class="hero-letter" aria-hidden="true">E</span>
+      <span class="hero-letter" aria-hidden="true">R</span>
+    </h1>
+
+    <p class="hero-subtitle">
+  A universe of endless possibilities.
+</p>
+
+    <div class="hero-actions">
+      
+<a
+  class="magnetic-btn"
+  href="#contact"
+  (pointermove)="onMagneticMove($event)"
+  (pointerleave)="onMagneticLeave($event)"
+>
+ <span>Explore the Universe</span>
+  <span class="button-arrow" aria-hidden="true">↗</span>
+</a>
+
+    </div>
+  </div>
+</main>
+
+<!-- MANIFESTO SECTION -->
+<section class="manifesto-section">
+
+ <div class="manifesto-top">
+  <span class="section-number">01 / THE SOLAR SYSTEM</span>
+  <span class="section-caption">A JOURNEY THROUGH SPACE</span>
+</div>
+
+  <div class="manifesto-content">
+
+<h2 class="manifesto-title">
+
+  <span class="text-mask-line">
+    <span class="reveal-text">Eight planets.</span>
+  </span>
+
+  <span class="text-mask-line">
+    <span class="reveal-text">
+      One <span class="accent-word">universe.</span>
+    </span>
+  </span>
+
+  <span class="text-mask-line">
+    <span class="reveal-text">Endless</span>
+  </span>
+
+  <span class="text-mask-line">
+    <span class="reveal-text accent-word">
+      discoveries.
+    </span>
+  </span>
+
+</h2>
+
+    <p class="manifesto-description">
+  From the blazing Sun to the distant Neptune.
+  Every planet has a story.
+  Every orbit reveals a new wonder.
+</p>
+
+  </div>
+
+  <div class="manifesto-footer">
+  <span>EXPLORE THE UNKNOWN.</span>
+  <span>DISCOVER THE EXTRAORDINARY.</span>
+</div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section" id="contact">
+  <p>YOUR NEXT MISSION AWAITS</p>
+  <h2>Ready for liftoff?</h2>
+</section>
+
+<!-- ================================= -->
+<!-- SELECTED WORKS -->
+<!-- ================================= -->
+
+<section class="works-section" id="works">
+
+  <div class="works-header">
+   <div class="works-label">
+  <span>02 / SPACE MISSIONS</span>
+  <span>WORLDS BEYOND IMAGINATION</span>
+</div>
+
+    <div class="works-heading">
+  <h2>
+    Explore
+    <span>New Worlds.</span>
+  </h2>
+
+  <p>
+    A universe of digital experiences,
+    creative explorations and futuristic ideas.
+  </p>
+</div>
+  </div>
+
+  <!-- Horizontal Gallery -->
+  <div class="works-pin">
+
+    <div class="works-track">
+
+      <!-- PROJECT 01 -->
+      <article
+  class="work-card"
+  (pointermove)="onProjectMove($event)"
+  (pointerleave)="onProjectLeave($event)"
+>
+
+        <div class="work-image">
+          <img
+  src="/assets/projects/digital-worlds.jpg"
+  alt="Digital Worlds immersive experience"
+/>
+
+          <div class="work-overlay"></div>
+
+          <span class="work-number">01</span>
+
+          <a href="#contact" class="work-link"
+             aria-label="Explore Digital Worlds">
+            ↗
+          </a>
+
+          <div class="work-image-caption">
+            IMMERSIVE EXPERIENCE
+          </div>
+        </div>
+
+       <!-- PROJECT 01 -->
+<div class="work-info">
+  <span class="work-number">01</span>
+
+  <span class="work-category">THE BLUE PLANET</span>
+
+  <span class="work-label">01 — EXOPLANET DISCOVERY</span>
+
+  <h3>HD 189733b</h3>
+
+  <p>
+    A giant blue world with an atmosphere hotter than a furnace.
+    Despite its beautiful color, this distant planet is an extreme
+    and violent place, where winds can reach incredible speeds.
+  </p>
+
+  <span class="work-year">2026</span>
+
+  <div class="work-tech">
+    <span>NASA</span>
+    <span>HUBBLE</span>
+    <span>EXOPLANET</span>
+  </div>
+</div>
+
+
+      </article>
+
+      <!-- PROJECT 02 -->
+      <article
+  class="work-card"
+  (pointermove)="onProjectMove($event)"
+  (pointerleave)="onProjectLeave($event)"
+>
+
+        <div class="work-image">
+          <img
+  src="/assets/projects/architecture.jpg"
+  alt="Obsidian architectural visualization"
+/>
+
+          <div class="work-overlay"></div>
+
+          <span class="work-number">02</span>
+
+          <a href="#contact" class="work-link"
+             aria-label="Explore Obsidian">
+            ↗
+          </a>
+
+          <div class="work-image-caption">
+            SPATIAL DESIGN
+          </div>
+        </div>
+
+        <!-- PROJECT 02 -->
+<div class="work-info">
+  <span class="work-number">02</span>
+
+  <span class="work-category">THE CARBON WORLD</span>
+
+  <span class="work-label">02 — EXTREME PLANETS</span>
+
+  <h3>WASP-12b</h3>
+
+  <p>
+    A scorching gas giant with an unusual atmosphere rich in carbon.
+    Orbiting extremely close to its star, this mysterious world
+    challenges what we know about distant planets.
+  </p>
+
+  <span class="work-year">2026</span>
+
+  <div class="work-tech">
+    <span>NASA</span>
+    <span>SPITZER</span>
+    <span>EXOPLANET</span>
+  </div>
+</div>
+
+
+      </article>
+
+      <!-- PROJECT 03 -->
+      <article
+  class="work-card"
+  (pointermove)="onProjectMove($event)"
+  (pointerleave)="onProjectLeave($event)"
+>
+
+        <div class="work-image">
+          <img
+  src="/assets/projects/neural.jpg"
+  alt="Neural futuristic interface"
+/>
+
+          <div class="work-overlay"></div>
+
+          <span class="work-number">03</span>
+
+          <a href="#contact" class="work-link"
+             aria-label="Explore Neural">
+            ↗
+          </a>
+
+          <div class="work-image-caption">
+            FUTURE INTERFACES
+          </div>
+        </div>
+
+        <!-- PROJECT 03 -->
+<div class="work-info">
+  <span class="work-number">03</span>
+
+  <span class="work-category">THE SEARCH FOR LIFE</span>
+
+  <span class="work-label">03 — SPACE EXPLORATION</span>
+
+  <h3>Terrestrial Planet Finder</h3>
+
+  <p>
+    A proposed NASA mission concept designed to study distant
+    planetary systems, search for Earth-like worlds, and investigate
+    whether their atmospheres could hold the ingredients for life.
+  </p>
+
+  <span class="work-year">MISSION CONCEPT</span>
+
+  <div class="work-tech">
+    <span>NASA</span>
+    <span>SPACE TELESCOPES</span>
+    <span>EXOPLANETS</span>
+  </div>
+</div>
+
+      </article>
+
+    </div>
+  </div>
+
+  <!-- Progress -->
+  <div class="works-progress">
+    <span class="progress-label">01 — 03</span>
+
+    <div class="progress-line">
+      <span class="progress-fill"></span>
+    </div>
+
+   <span class="progress-hint">
+  CONTINUE YOUR JOURNEY
+</span>
+  </div>
+
+</section>
+<app-science-lab-three></app-science-lab-three>
+</div>
+
