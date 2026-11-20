@@ -554,12 +554,14 @@ p {
     justify-content: center;
   }
 
+  
   .orb-wrap {
     width: 260px;
-    right: -90px;
+    right: max(16px, calc((100% - 260px) / 2));
     top: 22%;
     opacity: 0.55;
   }
+
 
   .orbit-four,
   .orbit-five,
